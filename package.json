@@ -1,0 +1,21 @@
+{
+  "name": "skelenode-dispatcher",
+  "version": "0.0.1",
+  "description": "A pub/sub library to dispatch events across all parts of an app, both front-end and back-end",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tgolen/skelenode-dispatcher.git"
+  },
+  "keywords": [
+    "dispatcher",
+    "pubsub",
+    "skelenode"
+  ],
+  "author": "Tim Golen <tim@golen.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tgolen/skelenode-dispatcher/issues"
+  },
+  "homepage": "https://github.com/tgolen/skelenode-dispatcher"
+}
