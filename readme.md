@@ -35,6 +35,8 @@ dispatcher.publish('my-event')
 ### start(port, host, password, debug)
 Connects to redis on the given `port`, `host`, and optional `password`. The `debug` argument is a boolean which will output logs to the server to help troubleshoot what's happening.
 
+This only needs to be called once when your application starts.
+
 ### attach(context)
 Attaches the dispatcher to a particular `context`, adding the "dispatcher" namespace to it.
 
