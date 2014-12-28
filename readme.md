@@ -20,6 +20,14 @@ var dispatcher = require('skelenode-dispatcher');
 
 // start the dispatcher which connects to redis
 dispatcher.start(redisPort, redisHost, redisPassword, debug);
+
+// subscribe to an event
+dispatcher.subscribe('my-event', function() {
+	console.log('My Event!');
+});
+
+// publish an event
+dispatcher.publish('my-event')
 ```
 
 ## Methods
