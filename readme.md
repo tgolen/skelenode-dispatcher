@@ -1,5 +1,5 @@
 # Skelenode Dispatcher
-This is a Skelenode component to manage publish/subscribe events across all parts of your application. When used in conjunction with Skelenode API, you can also listen for events from the front-end of your application. Because of it's use with redis it can communicate across all nodes in a cluster with no issues.
+This is a [Skelenode](https://github.com/tgolen/skelenode) component to manage publish/subscribe events across all parts of your application. When used in conjunction with [Skelenode API](https://github.com/tgolen/skelenode-api), you can also listen for events from the front-end of your application. Because of it's use with [Redis](http://redis.io) it can communicate across all nodes in a cluster with no issues.
 
 The dispatched events do not contain any data. This means that we can keep it lean and not have to worry about
 permissions or access rights. When a callback is fired, it's the responsability of the listener to respond to the event appropriately.
@@ -7,7 +7,7 @@ permissions or access rights. When a callback is fired, it's the responsability 
 For example, your front-end has a list of restaurants. It can listen to an event like 'change:restaurant' and when there is a change to the list of restaurants, the server will emit the event 'change:restaurant'. The client will then fire off a request to the server to fetch a new list of restaurants.
 
 # Requirements
-* You must have a redis server that you can connect to
+* You must have a [Redis](http://redis.io) server that you can connect to
 
 # Installation
 ```
